@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--Developer:Jerrvon Ewing
+    Date: 07/06/2020
+    Description: Implementation of a website for a pizza delivery company
+                 which offers the end-user the option to login to their account where 
+                 they may save payments, orders, etc. It also gives the end-user the ability
+                 to order food online, read about the company, or offer feedback on service.-->
+<html>
+<head>
+    <title>Pizza Parlor - Home of the Pan Pizza</title> <!--Title of website window-->
+<!-- CSS styling -->
+    <style>
+    .links
+    {
+        border-radius: 5px;  
+        background-color: rgb(200,10,10);
+        color: white;
+        text-align: center;
+        font-family: cursive;
+    }
+    /*How the element reacts to hovering of the mouse*/
+    .links:hover
+    {
+        background-color: darkgreen;
+        cursor: pointer;
+    }
+
+    .links2
+    {
+        border-radius: 5px;  
+        background-color: rgb(200,10,10);
+        color: white;
+        text-align: center;
+        height:10px;
+        font-family: cursive;
+        width: 33.33%;
+    }
+    /*How the element reacts to hovering of the mouse*/
+    .links2:hover
+    {
+        background-color: darkgreen;
+        cursor: pointer;
+    }
+
+    .container {
+  position: relative;
+  width: 100%;
+}
+
+/*Format button within image*/
+.container img {
+  width: 100%;
+  height: auto;
+  opacity: 0.75;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background: none;
+  color: white;
+  font-size: 48px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  color: lightgray;
+}
+
+.cart-img{
+    background-color: white;
+}
+.cart-img :hover{
+    background-color: white;
+    cursor: pointer;
+    opacity: 75%;
+}
+.header-tr{
+    width: 10%;
+    background-color: white;
+    color: whitesmoke;
+}
+.social-icon{
+    width:5%;
+    padding-right: 5%;
+}
+.social-icon:hover{
+    cursor: pointer;
+    opacity: 85%;
+}
+.footer-content{
+    font-family: cursive;
+}
+.top-header{
+    position:fixed;
+    top:0;
+    width: 100%;
+    height: 30px;
+    color:white;
+}
+
+    </style>
+</head>
+<body>
+<!--Below is the implementation of the table which appears as the menu bar at the very top of the page-->
+<table class="top-header"> <!--Table border, how far it extends across the page, and the text color-->
+    <tr>
+        <td width="23%" class="links">Home</td>
+        <td width="23%" class="links">Account</td>
+        <td width="23%" class="links">Order</td>
+        <td width="23%" class="links">About Us</td>
+        <td width="8%"  class="cart-img"><img src="img/cart.png" alt="shopping cart" width="50%"></td>
+    </tr>
+</table>
+<!--Table contains centered logo at the top of the web page-->
+<table border="0" height=20 width="100%" color="white" bgcolor="white"> <!--Table border, how far it extends across the page, and the text color-->
+    <tr>
+        <td class="header-tr"><img src="img/header.jpg" width="100%%"></td>
+        <td class="header-tr"><img src="img/logo.png" width="100%"></td>
+        <td class="header-tr"><img src="img/header2.jpg" width="100%%"></td>
+    </tr>
+</table>
+
+<!-- image being used as background with appropriate dimensions-->
+<div class="container">
+    <img src="img/banner.jpg" alt="logo" width="100%">
+    <button class="btn">Order Now<br><br>773-555-6119</button>
+  </div>
+
+<!-- table consisting of images featuring cusine-->
+<table border="0" height=00 width="100%">
+    <tr>
+        <td class="links2">Pizza<br><img src="img/pizza.jpg" alt="pizza" width="100%"></td>
+        <td class="links2">Wings<br><img src="img/wings.jpg" alt="wings" width="100%"></td>
+        <td class="links2">Salads<br><img src="img/salad.jpg" alt="salad" width="100%"></td>
+    </tr>
+    <tr>
+        <td class="links2">Calzones<br><img src="img/calzone.jpg" alt="pizza" width="100%"></td>
+        <td class="links2">Pasta<br><img src="img/pasta.jpg" alt="pizza" width="100%"></td>
+        <td class="links2">Drinks<br><img src="img/drinks.jpg" alt="pizza" width="100%"></td>
+    </tr>
+</table>
+<!-- footer image -->
+<div class="footer-content">
+    <h3>Connect With Us!</h3>
+    <img class="social-icon" src="img/phone.png" alt="phone icon">
+    <img class="social-icon" src="img/facebook.png" alt="facebook icon">
+    <img class="social-icon" src="img/twitter.png" alt="twitter icon">
+    <img class="social-icon" src="img/instagram.png" alt="instagram icon">
+</div>
+
+</table>
+    <br>
+    <footer>Designed and implemented by Jerrvon Ewing</footer>
+    </main>
+</body>
+</html>
